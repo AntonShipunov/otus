@@ -3,7 +3,7 @@ package com.otus.homework.sort;
 public class HeapSort {
 
     public static int[] sort(int[] array) {
-        for (int i = array.length / 2 + 1; i >= 0; i--) {
+        for (int i = array.length / 2 - 1; i >= 0; i--) {
             heapify(i, array.length, array);
         }
         for (int j = array.length - 1; j > 0; j--) {
